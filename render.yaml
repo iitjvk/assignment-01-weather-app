@@ -1,0 +1,18 @@
+# Exported from Render on 2024-07-14T07:10:52Z
+services:
+- type: web
+  name: assignment-01-weather-app
+  runtime: docker
+  repo: https://github.com/iitjvk/assignment-01-weather-app
+  plan: free
+  envVars:
+  - key: .env
+    sync: false
+  - key: PORT
+    sync: false
+  - key: API_KEY
+    sync: false
+  region: oregon
+  dockerContext: .
+  dockerfilePath: ./Dockerfile
+version: "1"
