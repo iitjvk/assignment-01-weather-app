@@ -7,6 +7,10 @@ services:
   envVars:
   - key: .env
     sync: false
+  - key: API_KEY
+    sync: false
+  - key: PORT
+    sync: false
   region: oregon
   dockerContext: .
   dockerfilePath: ./Dockerfile
