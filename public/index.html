@@ -9,18 +9,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="logo">Weather App</div>
+    </header>
     <div class="container">
-        <h1>Weather App</h1>
+        
+        <main>
         <form id="weatherForm">
             <label for="cityInput">Enter City Name:</label>
-            <input type="text" id="cityInput" name="city" required>
+            <input type="text" id="cityInput" name="city" 
+                placeholder="Enter City Name" aria-label="Enter City Name"
+                required>
             <button type="submit">Get Weather</button>
         </form>
         <div id="weatherInfo" class="weather-info">
             <!-- Weather information will be displayed here -->
         </div>
     </div>
-
+    </main>
+    <footer>
+        <p>&copy; 2024 Weather App. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
