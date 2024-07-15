@@ -25,9 +25,6 @@ describe('Weather API', () => {
         expect(response.body.humidity).toBe(60);
         expect(response.body.windSpeed).toBe(5);
         expect(response.body.weatherDescription).toBe('Cloudy');
-
-        // Optional: Verify Axios.get was called with the correct URL
-        // expect(axios.get).toHaveBeenCalledWith(expect.stringContaining('/weather?q=New%20Delhi'));
     });
 
     it('should handle error when city is not provided', async () => {

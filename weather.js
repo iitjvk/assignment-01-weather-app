@@ -32,7 +32,7 @@ app.get("/weather", async (req, res) => {
     };
     res.json(weatherData);
   } catch (error) {
-    console.error("Error fetching weather:", error.message);
+    // console.error("Error fetching weather:", error.message);
     res
       .status(error.response ? error.response.status : 500)
       .json({ error: "Error fetching weather data" });
